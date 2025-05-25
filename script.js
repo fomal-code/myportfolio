@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 revealElements.forEach(el => observer.observe(el));
 // Typewriter effect for hero subtitle
 const typewriterText = [
-  'Full Stack Developer',
+  'FullStack Developer',
   'JavaScript Enthusiast',
   'UI/UX Passionate',
   'Problem Solver',
@@ -58,3 +58,10 @@ function type() {
 document.addEventListener('DOMContentLoaded', () => {
   if(typewriterElement) type();
 });
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+

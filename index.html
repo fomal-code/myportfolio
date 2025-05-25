@@ -10,19 +10,28 @@
 </head>
 <body>
 
-  <header class="nav">
-    <div class="container nav-content">
-      <h1 class="logo">Fomal.code</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="mailto: lawalfawazololade@gmail.com">Contact</a></li>
-        </ul>
-      </nav>
+ <header class="nav">
+  <div class="container nav-content">
+    <h1 class="logo">Lawal Fawaz</h1>
+
+    <!-- Hamburger icon for mobile -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </header>
+
+    <ul class="menu" id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">Bio</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+  </div>
+</header>
 
   <section class="hero">
     <div class="container">
@@ -73,11 +82,11 @@
   <section id="contact" class="section dark">
     <div class="container reveal">
       <h2 class="section-title">Let’s Work Together</h2>
-      <form class="contact-form" action="send.php">
+      <form class="contact-form" action="mailto: lawalfawazololade@gmail.com">
         <input type="text" placeholder="Your Name" required id="name" name="name">
         <input type="email" placeholder="Your Email" required id="email" name="email">
         <textarea rows="4" placeholder="Your Message" required id="message" name="message"></textarea>
-        <button type="submit">Send</button>
+        <button type="button">Send</button>
       </form>
     </div>
   </section>
